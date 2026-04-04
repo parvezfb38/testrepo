@@ -2,3 +2,6 @@ fastapi
 uvicorn
 sqlalchemy
 pydantic[email]
+aiofiles
+selenium
+webdriver-manager
