@@ -30,7 +30,7 @@ def wait_toast(driver, text_fragment):
         EC.text_to_be_present_in_element((By.ID, "toast"), text_fragment)
     )
 
-# ── Users ──────────────────────────────────────────────────────────────────────
+# ── Users Configuration ──────────────────────────────────────────────────────────────────────
 
 def test_page_loads(driver):
     driver.get(BASE_URL)
