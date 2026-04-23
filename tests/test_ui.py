@@ -11,7 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
-# localhostUrl
+# localhostUrlplaneer
 BASE_URL = "http://localhost:8000"
 
 @pytest.fixture(scope="module")
