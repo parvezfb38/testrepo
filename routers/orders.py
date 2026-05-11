@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from database import get_db
 import models, schemas
 
-# order routers - testing mcp 1
+# order routers - testing mcp 2
 
 router = APIRouter(prefix="/orders", tags=["Orders"])
 
