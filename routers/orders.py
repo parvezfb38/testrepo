@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from database import get_db
 import models, schemas
 
-# order routers - upated teh comment
+# order routers - upated the comments
 
 router = APIRouter(prefix="/orders", tags=["Orders"])
 
