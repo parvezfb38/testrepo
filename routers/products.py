@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from database import get_db
 import models, schemas
-# products router configuration backend changes bot3error +1
+# products router configuration backend changes bot3error +1 testwithlotsoftry
 router = APIRouter(prefix="/products", tags=["Products"])
 
 @router.post("/", response_model=schemas.ProductOut, status_code=201)
