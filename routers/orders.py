@@ -12,6 +12,7 @@ import models, schemas
 # agent trigger test run 5
 # agent trigger test run 6
 # agent trigger test run 7+1
+# agent test with regression worker
 
 router = APIRouter(prefix="/orders", tags=["Orders"])
 
