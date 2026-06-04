@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from database import get_db
 import models, schemas
 # products router configuration backend changes rca_worker tst with regression_worker againtest 
-# agent test withs3 all worker test agent 
+# agent test withs3 all worker test agent regression and rca
 router = APIRouter(prefix="/products", tags=["Products"])
 
 @router.post("/", response_model=schemas.ProductOut, status_code=201)
