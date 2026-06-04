@@ -9,11 +9,13 @@ import models, schemas
 # agent trigger test run 2
 # agent trigger test run 3
 # agent trigger test run 4
+# agent trigger test run 5
 
 router = APIRouter(prefix="/orders", tags=["Orders"])
 
 @router.post("/", response_model=schemas.OrderOut, status_code=201)
 def create_order(order: schemas.OrderCreate, db: Session = Depends(get_db)):
+    """Create an order and decrement product stock."""
     user = db.query(models.User).filter(models.User.id == order.user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
